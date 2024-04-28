@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Tatiana Fedorova</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta id="meta-keywords" name="keywords" content="">
-
-    <meta id="meta-description" name="description" content="">
+    <title>Tatiana Fedorova</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
@@ -25,6 +21,11 @@
 <div id="root">
     <header>
         <div id="progressBar"></div>
+        <button id="menuToggle" class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#about">About me</a></li>
@@ -40,11 +41,13 @@
     <div class="background-header">
     </div>
     <section id="about">
-        <div class="about-section">
+        <div class="section">
             <div class="about-content">
                 <img src="./assets/me.jpeg" alt="Profile Picture" class="profile-image">
                 <div class="about-box">
-                    <h1 class="name">TATIANA FEDOROVA<br></h1>
+                    <a class="name" href="https://github.com/txfedorova/ITW_project">
+                        <h2 class="name">TATIANA FEDOROVA<br></h2>
+                    </a>
                     <p class="heading-xs font-primary text-justify">My name is Tatiana Fedorova, and I'm
                         a student at Brno Technical University. Programming is my passion, and I'm just
                         starting my journey in this field. However, alongside coding, I also have a keen
@@ -69,9 +72,9 @@
     </section>
 
     <section id="edu">
-        <div class="edu-section">
-            <div class="edu-content">
-                <h1 class="heading-md text-center color-white">Education</h1>
+        <div class="section">
+            <div class="content-box">
+                <h2 class="heading-md text-center color-white">Education</h2>
                 <div class="edu-box">
                     <div class="edu-item">
                         <div class="icon">
@@ -79,7 +82,7 @@
                         </div>
                         <div class="bar-dot"></div>
                         <div class="edu-text-box">
-                            <h2 class="heading-xs color-white">Nov 2013 - Aug 2015</h2>
+                            <h3 class="heading-xs color-white">Nov 2013 - Aug 2015</h3>
                             <p class="font-primary color-white">
                                 Medical High School №93, Tyumen (Russia)
                             </p>
@@ -91,7 +94,7 @@
                         </div>
                         <div class="bar-dot"></div>
                         <div class="edu-text-box">
-                            <h2 class="heading-xs color-white">Sep 2016 - Aug 2020</h2>
+                            <h3 class="heading-xs color-white">Sep 2016 - Aug 2020</h3>
                             <p class="font-primary color-white">
                                 University of Pardubice,
                                 Faculty of Chemistry, Polymer Materials and Composites
@@ -104,7 +107,7 @@
                         </div>
                         <div class="bar-dot"></div>
                         <div class="edu-text-box">
-                            <h2 class="heading-xs color-white">Sep 2020 - Present<br></h2>
+                            <h3 class="heading-xs color-white">Sep 2020 - Present<br></h3>
                             <p class="font-primary color-white">
                                 Brno University of Technology
                                 Faculty of Information Technology
@@ -117,7 +120,7 @@
     </section>
 
     <section id="lang">
-        <div class="lang-section">
+        <div class="section">
             <div class="lang-content">
                 <div class="lang-box">
                     <div class="lang-icon">
@@ -147,10 +150,10 @@
     </section>
 
     <section id="work">
-        <div class="work-section">
+        <div class="section">
             <div class="work-content">
                 <div class="work-box">
-                    <h1 class="heading-md text-center color-white">Work experience</h1>
+                    <h2 class="heading-md text-center color-white">Work experience</h2>
                 </div>
                 <div class="primary-font-light timeline-box">
                     <div class="timeline-item">
@@ -184,9 +187,9 @@
     </section>
 
     <section id="portfolio">
-        <div class="portfolio-section">
-            <div class="portfolio-content">
-                <h1 class="heading-md text-center color-dark">Portfolio</h1>
+        <div class="section">
+            <div class="content-box">
+                <h2 class="heading-md text-center color-dark">Portfolio</h2>
                 <div class="portfolio-box">
                     <article class="portfolio-item">
                         <div class="portfolio-img">
@@ -250,7 +253,7 @@
     </section>
 
     <section id="pet">
-        <div class="section-content">
+        <div class="content-box">
             <div class="section-content-heading-wrapper">
                 <h3 class="heading-md text-center color-white">My dawg Brunik</h3>
             </div>
@@ -264,8 +267,8 @@
     </section>
 
     <footer id="contact">
-        <div class="contact-section">
-            <div class="contact-content">
+        <div class="section">
+            <div class="content-box">
                 <h1 class="heading-md text-center color-dark">Contact Me</h1>
                 <div class="contact">
                     <p class="heading-xs color-dark">Social Media</p>
@@ -280,11 +283,14 @@
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                    <p class="heading-xs color-dark">Phone</p>
-                    <a href="mailto:+xxx" class="contact-text">+420 777777777</a>
-                    <p class="heading-xs color-dark">
-                        Email
-                    </p><a href="tel:student@email.com" class="contact-text">student@email.com</a>
+                    <div class="contact-box">
+                        <p class="heading-xs color-dark">Phone</p>
+                        <a href="mailto:+xxx" class="color-highlight-dark">+420 777777777</a>
+                    </div>
+                    <div class="contact-box">
+                        <p class="heading-xs color-dark">Email</p>
+                        <a href="tel:student@email.com" class="color-highlight-dark">student@email.com</a>
+                    </div>
                 </div>
             </div>
         </div>
